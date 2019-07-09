@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+
+}
+h4{
+    text-align: center;
+}
+
+div{
+    margin: inherit;
+    text-align: center;
+    width: 200px;
+    margin-right: 150px;
+    border: black 1px solid;
+    box-shadow: 1px 5px black;
+}
+
+#sol{
+    background-color: #E8FF00;
+}
+
+#jupiter{
+ background-color: #808D00;
+    color: white;
+}
+
+#tierra{
+ background-color: #005FBE;
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+/*Animacion*/
+.fadeIn{
+    animation-name: fadeIn;
+    animation-fill-mode: both;
+    animation-duration: 4s;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fadeInDown{
+    animation-name: fadeInDown;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+}
+
+@keyframes fadeInDown {
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+}

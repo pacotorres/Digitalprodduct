@@ -1,0 +1,91 @@
+/*
+.caja{
+    color: yellow;
+    background: black;
+    font-size: 10px;
+    padding: 10px;
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+:root{
+    --green-color:#7acc2d;
+    --white-color:white;
+    --black-color:black;
+    --normal:12px;
+    --space: 10px;
+    --space-2:20px;
+    --box: 0px 0 2px 1px #e6e5e9;
+}
+html,body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: "Open Sans";
+}
+
+nav{
+    display: flex;
+    background-color: var(--green-color);
+    padding: 10px;
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-right: 20px;
+    list-style: none;
+}
+
+nav li a{
+    color: gray;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: white;
+}
+
+p, label{
+    font-size: var(--normal);
+}
+
+label{
+    padding-bottom: var(--space);
+}
+
+/*Venta*/
+
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.data{
+    margin-top: var(--space);
+    width: 52%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+}
+
+.main_btn{
+    margin-top: var(--space);
+    margin-top: 10px;
+    width: 52%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+}
+
+.modulo_pago_images{
+    max-width: 150px;
+    text-align: center;
+}
